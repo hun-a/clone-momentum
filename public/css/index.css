@@ -79,6 +79,11 @@ body {
 
 input {
   outline: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
 }
 
 #js-todos {
@@ -90,8 +95,38 @@ input {
   align-items: center;
 }
 
+#js-todo-form input {
+  margin: 10px 0 0 0;
+  border: 0;
+  border-bottom: 4px solid white;
+  background: none;
+  font-size: 120%;
+  font-weight: 500;
+  color: white;
+  width: 200;
+}
+
 #Js-todo-text {
   margin-top: 10px;
+}
+
+#js-todo-list {
+  margin: 0;
+}
+
+li.js-done {
+  text-decoration: line-through;
+}
+
+button {
+  outline: none;
+  width: 40px;
+  height: 20px;
+  border: 2px solid white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  margin:2 5 0 0;
 }
 
 #js-footer {
