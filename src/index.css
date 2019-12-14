@@ -54,7 +54,31 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 337.5%;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+#js-form {
+  height: 80px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 0;
+}
+
+#js-form input {
+  margin-left: 20px;
+  border: 0;
+  border-bottom: 5px solid white;
+  background: none;
+  font-size: 100%;
+  font-weight: 500;
+  color: white;
+  width: 200;
+}
+
+input {
+  outline: none;
 }
 
 #js-todos {
@@ -73,4 +97,8 @@ body {
 #js-footer {
   background-color: blue;
   height: 80px;
+}
+
+.showing {
+  display: block;
 }

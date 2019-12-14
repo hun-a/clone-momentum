@@ -12,7 +12,12 @@
     </div>
     <div id="js-body">
       <div id="js-clock">00:00:00</div>
-      <div id="js-greeting">This is your name</div>
+      <div id="js-greeting">
+        <form id="js-form">
+          <span class="show">What is your name?</span>
+          <input type="text">
+        </form>
+      </div>
       <div id="js-todos">
         <div id="js-todo-text">TODO list</div>
         <ul id="js-todo-list"></ul>
@@ -21,5 +26,6 @@
     <div id="js-footer"></div>
   </div>
   <script src="src/clock.js"></script>
+  <script src="src/greeting.js"></script>
 </body>
 </html>
