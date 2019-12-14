@@ -1,0 +1,75 @@
+body {
+  font-family: -apple-system,
+  BlinkMacSystemFont,
+  "Neue Haas Grotesk Text Pro",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif
+}
+
+#js-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#js-header {
+  background-color: red;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#js-weather {
+  background-color: white;
+  height: 60px;
+  width: 80px;
+  margin: 0 10px 0 10px;
+}
+
+#js-body {
+  background-color: green;
+  height: 100%;
+}
+
+#js-clock {
+  background-color: violet;
+  margin: 230px 0px 0px 0px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1050%;
+  font-weight: 500;
+}
+
+#js-greeting {
+  background-color: yellow;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 337.5%;
+  font-weight: bold;
+}
+
+#js-todos {
+  background-color: grey;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#Js-todo-text {
+  margin-top: 10px;
+}
+
+#js-footer {
+  background-color: blue;
+  height: 80px;
+}
