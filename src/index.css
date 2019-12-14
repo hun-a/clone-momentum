@@ -5,7 +5,8 @@ body {
   "Helvetica Neue",
   Helvetica,
   Arial,
-  sans-serif
+  sans-serif;
+  color: white;
 }
 
 #js-container {
