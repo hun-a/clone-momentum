@@ -140,7 +140,12 @@ button {
 }
 
 #js-footer {
-  height: 80px;
+  height: 50px;
+  text-align: center;
+}
+
+#js-saying {
+  font-size: 1.3rem;
 }
 
 .showing {
