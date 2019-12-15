@@ -16,7 +16,6 @@ body {
 }
 
 #js-header {
-  background-color: red;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -28,6 +27,17 @@ body {
   height: 60px;
   width: 80px;
   margin: 0 10px 0 10px;
+  text-align: right;
+}
+
+#js-weather-temp {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+#js-weather-city {
+  margin-top: 5px;
+  font-size: 0.8rem;
 }
 
 #js-body {
