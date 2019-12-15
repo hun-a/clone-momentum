@@ -6,6 +6,7 @@ const TODOS_LC = 'TODOS';
 const DONE_CL = 'js-done';
 const BTN_DONE = 'done';
 const BTN_DELETE = 'delete';
+const BTN_REDO = 'redo';
 const MAX_TODO_LENGTH = 5;
 const MAX_MESSAGE = 'Can\'t add more than 5';
 const DEFAULT_MESSAGE = 'Add your TODO';
@@ -17,13 +18,26 @@ function saveTodos() {
 }
 
 function handleDone(event) {
-  const li = event.target.parentNode;
-  li.classList.add(DONE_CL);
+  const btn = event.target;
+  const li = btn.parentNode;
+  let isDone;
+
+  if (li.classList.contains(DONE_CL)) {
+    li.classList.remove(DONE_CL);
+    btn.innerHTML = BTN_DONE;
+    isDone = false;
+  } else {
+    li.classList.add(DONE_CL);
+    btn.innerHTML = BTN_REDO;
+    isDone = true;
+  }
+
   todos.forEach(todo => {
     if (todo.id === Number(li.id)) {
-      todo.isDone = true;
+      todo.isDone = isDone;
     }
   });
+
   saveTodos();
 }
 
@@ -47,9 +61,7 @@ function createLi(todoObject) {
 
   li.id = todoObject.id;
   span.innerHTML = todoObject.text;
-  doneBtn.classList.add(BTN_DONE);
-  deleteBtn.classList.add(BTN_DELETE);
-  doneBtn.innerHTML = BTN_DONE;
+  doneBtn.innerHTML = todoObject.isDone ? BTN_REDO : BTN_DONE;
   deleteBtn.innerHTML = BTN_DELETE;
   doneBtn.addEventListener('click', handleDone);
   deleteBtn.addEventListener('click', handleDelete);

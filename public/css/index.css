@@ -114,8 +114,13 @@ input::placeholder {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 li.js-done {
   text-decoration: line-through;
+  list-style-image: url(../img/icon/checked.png);
 }
 
 button {
